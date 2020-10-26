@@ -1,6 +1,6 @@
 {
   "author": "Mapnik Developers",
-  "name": "mapnik-reference",
+  "name": "@naturalatlas/mapnik-reference",
   "description": "Reference for Mapnik Styling Options",
   "version": "8.10.0",
   "repository": {
