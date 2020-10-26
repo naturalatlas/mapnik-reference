@@ -1168,6 +1168,60 @@
                 "doc": "Specifies the color of the halo around the text.",
                 "default-meaning": "The shield halo text will be rendered white."
             },
+            "halo-bgsmooth": {
+                "css": "shield-halo-bgsmooth",
+                "type": "boolean",
+                "expression":true,
+                "default-value": false,
+                "default-meaning": "No halo background smoothing will be performed.",
+                "doc": "Enables/disable halo background smoothing."
+            },
+            "halo-bgsmooth-min": {
+                "css": "shield-halo-bgsmooth-min",
+                "type": "color",
+                "expression":true,
+                "default-value": "black",
+                "default-meaning": "No min luma value to be considered for halo background smoothing.",
+                "doc": "Min luma value (computed from color) to be considered for halo background smoothing."
+            },
+            "halo-bgsmooth-max": {
+                "css": "shield-halo-bgsmooth-max",
+                "type": "color",
+                "expression":true,
+                "default-value": "white",
+                "default-meaning": "No max luma value to be considered for halo background smoothing.",
+                "doc": "Max luma value (computed from color) to be considered for halo background smoothing."
+            },
+            "halo-bgsmooth-outlier-lotrim": {
+                "css": "shield-halo-bgsmooth-outlier-lotrim",
+                "type": "float",
+                "default-value": 0.0,
+                "expression":true,
+                "default-meaning": "No outlier trimming.",
+                "doc": "Percentage of low luma values to trim out when computing halo backgrounds (0.0 to 1.0)."
+            },
+            "halo-bgsmooth-outlier-hitrim": {
+                "css": "shield-halo-bgsmooth-outlier-hitrim",
+                "type": "float",
+                "default-value": 1.0,
+                "expression":true,
+                "default-meaning": "No outlier trimming.",
+                "doc": "Percentage of high luma values to trim out when computing halo backgrounds (0.0 to 1.0)."
+            },
+            "halo-bgsmooth-group": {
+                "css": "shield-halo-bgsmooth-group",
+                "type": [
+                    "none",
+                    "character",
+                    "word",
+                    "line",
+                    "all"
+                ],
+                "default-value": "character",
+                "expression":true,
+                "default-meaning": "Group by character.",
+                "doc": "How to compute colors: by character, by word, etc."
+            },
             "halo-radius": {
                 "css": "shield-halo-radius",
                 "default-value": 0.0,
@@ -2342,6 +2396,20 @@
                 "expression":true,
                 "default-meaning": "No outlier trimming.",
                 "doc": "Percentage of high luma values to trim out when computing halo backgrounds (0.0 to 1.0)."
+            },
+            "halo-bgsmooth-group": {
+                "css": "text-halo-bgsmooth-group",
+                "type": [
+                    "none",
+                    "character",
+                    "word",
+                    "line",
+                    "all"
+                ],
+                "default-value": "character",
+                "expression":true,
+                "default-meaning": "Group by character.",
+                "doc": "How to compute colors: by character, by word, etc."
             },
             "halo-rasterizer": {
                 "css": "text-halo-rasterizer",
