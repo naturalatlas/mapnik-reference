@@ -2303,6 +2303,46 @@
                 "expression":true,
                 "default-meaning": "no halo."
             },
+            "halo-bgsmooth": {
+                "css": "text-halo-bgsmooth",
+                "type": "boolean",
+                "expression":true,
+                "default-value": false,
+                "default-meaning": "No halo background smoothing will be performed.",
+                "doc": "Enables/disable halo background smoothing."
+            },
+            "halo-bgsmooth-min": {
+                "css": "text-halo-bgsmooth-min",
+                "type": "color",
+                "expression":true,
+                "default-value": "black",
+                "default-meaning": "No min luma value to be considered for halo background smoothing.",
+                "doc": "Min luma value (computed from color) to be considered for halo background smoothing."
+            },
+            "halo-bgsmooth-max": {
+                "css": "text-halo-bgsmooth-max",
+                "type": "color",
+                "expression":true,
+                "default-value": "white",
+                "default-meaning": "No max luma value to be considered for halo background smoothing.",
+                "doc": "Max luma value (computed from color) to be considered for halo background smoothing."
+            },
+            "halo-bgsmooth-outlier-lotrim": {
+                "css": "text-halo-bgsmooth-outlier-lotrim",
+                "type": "float",
+                "default-value": 0.0,
+                "expression":true,
+                "default-meaning": "No outlier trimming.",
+                "doc": "Percentage of low luma values to trim out when computing halo backgrounds (0.0 to 1.0)."
+            },
+            "halo-bgsmooth-outlier-hitrim": {
+                "css": "text-halo-bgsmooth-outlier-hitrim",
+                "type": "float",
+                "default-value": 1.0,
+                "expression":true,
+                "default-meaning": "No outlier trimming.",
+                "doc": "Percentage of high luma values to trim out when computing halo backgrounds (0.0 to 1.0)."
+            },
             "halo-rasterizer": {
                 "css": "text-halo-rasterizer",
                 "type": [
